@@ -1,6 +1,6 @@
 
 /**
- * This gets all prodcuts
+ * This gets all products
  * @returns {}
  */
 async function getAllProducts() {
@@ -28,15 +28,15 @@ async function getAllProducts() {
      */
     const productList = document.querySelector('#product-list');
 
-    products.forEach((product) => {
-        console.log(product)
+    return products.forEach((product) => {
         const productListItem = document.createElement('li');
         const productLink = document.createElement('a');
-        const productID = product.id
-        productLink.setAttribute('href',  `/product.html/${productID}`);
-        productLink.innerText = product.title
-        productListItem.appendChild(productLink)
-        productList.appendChild(productListItem)
+        const productID = product.id;
+
+        productLink.setAttribute('href',  `product.html?pid=${productID}`);
+        productLink.innerText = product.title;
+        productListItem.appendChild(productLink);
+        productList.appendChild(productListItem);
     })
 })();
 

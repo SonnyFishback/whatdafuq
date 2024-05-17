@@ -1,0 +1,18 @@
+name: 'Success'
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  success:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Greet the contributor'
+        if: github.repository == 'SonnyFishback/whatdafuq'
+        uses: garg3133/welcome-new-contributors@v1.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pr-message: |
+            Congratulations! You successfully completed this challenge.
+            
