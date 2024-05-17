@@ -35,6 +35,7 @@ async function getProductByID(id) {
      * CHALLENGE:
      * 1. Show all the data that is returned in the product being logged above.
      * 2. Generate the most semantic tag for each product. For example: product.image should be stored in an <img/> tag.
+     * 3. Add a try catch block to your code to catch errors when the page loads.
      */
 
 })();
