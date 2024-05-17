@@ -12,7 +12,7 @@ jobs:
         if: github.repository == 'SonnyFishback/whatdafuq'
         uses: garg3133/welcome-new-contributors@v1.2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_ACCESS_TOKEN }}
           pr-message: |
             Congratulations! You successfully completed this challenge.
             ![proud :) ](https://media.giphy.com/media/NEvPzZ8bd1V4Y/giphy.gif?cid=790b7611mu8bp52za8ojsh7dkt5fl860wh273li0qx589ewr&ep=v1_gifs_search&rid=giphy.gif&ct=g)
