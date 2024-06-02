@@ -1,5 +1,111 @@
-/* 
-    CHALLENGE:
 
-    Style the page following your own creative ideas or some inspiration from https://awwwards.com
-*/
+@font-face {
+    font-family: 'Merriweather';
+    src: url(fonts/Merriweather/Merriweather-Regular.ttf)
+}
+
+p {
+    font-family: Calibri;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Calibri;
+}
+/*-----------------------------------HOME PAGE STYLING------------------------------------*/
+.main-page-body {
+    background-image: url(/images/main-page-photo-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    
+}
+                         /*---------home page nav bar---------*/
+
+.main-nav-bar-container {
+    display: inline;
+}
+
+.main-nav-bar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.main-nav-bar-item {
+    text-decoration: none;
+    color: white;
+    font-family: Merriweather;
+    font-size: 2vw;
+}
+
+.logo-container {
+    display: flex;
+    padding-top: 15%;
+    justify-content: center;
+}
+.logo {
+    font-family: Merriweather;
+    font-size: 10vw;
+    padding: 2%;
+    color: white;
+}
+.tagline {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: -10vw;
+}
+/*--------------------------------------ABOUT & PRODUCT PAGE STYLING---------------------------------------*/
+                                    /*--------nav bar styling--------*/
+.nav-bar-container {
+    display: inline;
+}
+
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-decoration: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+.nav-bar-item {
+    text-decoration: none;
+    color: black;
+    font-family: Merriweather;
+    font-size: 2vw;
+}
+
+.circle-logo{
+    width: 15%;
+    margin-left: -5vw;
+    padding: 1vw 0 0 0;
+}
+
+.team-photo-container {
+    
+    display: flex;
+    justify-content: center;
+}
+.team-photo {
+    width: 40%;
+   
+}
+.blurb-container {
+    display: flex;
+    justify-content: center;
+    margin: 1vw 15vw 1vw 15vw;
+}
+.about-blurb {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.product-list {
+    list-style-type: none;
+
+}
